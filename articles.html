@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+
+dialog::backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+table {
+    border-spacing: 20px;
+    margin: auto;
+	table-layout: fixed;
+   }
+  td {
+     height:360px;
+    text-align: center;
+   }
+p{font-style: italic ;
+     font-size: 20;}
+
+
+ button {
+	border: none;
+	background: #3a7999;
+	color: #f2f2f2;
+	padding: 2px;
+	font-size: 18px;
+	border-radius: 5px;
+	position: relative;
+	box-sizing: border-box;
+	transition: all 500ms ease;
+}
+
+button:hover {
+	padding:3px;
+	transform: scale(1.1, 1.1);
+}
+
+@-webkit-keyframes pulsate {
+ 50% { color: #fff; text-shadow: 0 -1px rgba(0,0,0,.3), 0 0 5px #ffd, 0 0 8px #fff; }
+}
+@keyframes pulsate {
+ 50% { color: #fff; text-shadow: 0 -1px rgba(0,0,0,.3), 0 0 5px #ffd, 0 0 8px #fff; }
+}
+#ts2 {
+
+	font-family: Arial;
+	font-size: 20px;
+	color: #FFFFFF;
+	text-shadow:
+		-0   -3px 3px #000000,
+		 0   -3px 3px #000000,
+		-0    3px 3px #000000,
+		 0    3px 3px #000000,
+		-3px -0   3px #000000,
+		 3px -0   3px #000000,
+		-3px  0   3px #000000,
+		 3px  0   3px #000000,
+		-1px -3px 3px #000000,
+		 1px -3px 3px #000000,
+		-1px  3px 3px #000000,
+		 1px  3px 3px #000000,
+		-3px -1px 3px #000000,
+		 3px -1px 3px #000000,
+		-3px  1px 3px #000000,
+		 3px  1px 3px #000000,
+		-2px -3px 3px #000000,
+		 2px -3px 3px #000000,
+		-2px  3px 3px #000000,
+		 2px  3px 3px #000000,
+		-3px -2px 3px #000000,
+		 3px -2px 3px #000000,
+		-3px  2px 3px #000000,
+		 3px  2px 3px #000000,
+		-3px -3px 3px #000000,
+		 3px -3px 3px #000000,
+		-3px  3px 3px #000000,
+		 3px  3px 3px #000000,
+		-3px -3px 3px #000000,
+		 3px -3px 3px #000000,
+		-3px  3px 3px #000000,
+		 3px  3px 3px #000000;
+}
+
+</style>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Лендинг</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">На главную</a>
+      </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">Анкета</a></li>
+          <li ><a href="aboutUs.html">О нас</a></li>
+          <li class="active"><a href="articles.html">Полезные статьи</a></li>
+          <li><a href="#">Мероприятия</a></li>
+          <li><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div id="headerwrap2">
+    <div class="container">
+      <div class="row centered">
+        <div class="col-lg-8 col-lg-offset-2">
+          <div class = "ts">Рекомендуем прочитать вам полезные статьи</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container w">
+    <div class="row centered">
+
+	<table width="90%" " border="0" >
+<tbody align="center">
+<h3><b>Рекомендуемые статьи</b></h3>
+<tr>
+<td>
+
+
+<dialog>
+<img src="img/employer.jpg" alt="" style="vertical-align:middle"><br>
+
+  <p>
+
+Здравое самоуважение необходимо для вас, чтобы повседневно заниматься задачами бизнеса. Как предприниматель вы будете проводить много времени, работая самостоятельно. Прислушивайтесь к своей интуиции, но основывайтесь на здравом смысле перед принятием заключительных деловых решений. Проявляйте инициативу, следуя намеченному курсу планов и организации.</p>
+  <button  id="close">Закрыть</button>
+</dialog>
+<button id="show"> <img src="img/employer.jpg" alt="" style="vertical-align:middle"></button>
+<br><br>
+<div id="ts2">Личные навыки</div>
+</td>
+
+
+
+<td>
+
+
+ <dialog id="dialog2">
+ <img src="img/top-meneng.jpg" alt="" style="vertical-align:middle"><br>
+
+  <p>Вы должны обновить свои навыки связи, если они немного устарели. Возможно, вы сочтёте необходимым связаться с адвокатами, бухгалтерами, менеджерами банка и т.д. Вы должны быть способны передать своё послание ясно. Хорошая связь снизит вероятность того, что ваше сообщение будет неправильно истолковано. Важно уметь налаживать эффективную связь в различных местах, к разнообразию манер, с разнообразными людьми. Существует много книг по усовершенствованию на эту тему.
+
+</p>
+  <button id="close2">Закрыть</button>
+</dialog>
+<button id="show2"><img src="img/top-meneng2.jpg" alt="" style="vertical-align:middle"></button>
+<br><br><center id="ts2">Навыки связи</center></td>
+
+
+
+<td> <dialog id="dialog3">
+<img src="img/serch1.jpg" alt="" style="vertical-align:middle"><br>
+
+  <p>Люди способны построить или разрушить ваш бизнес. Вы способны построить или разрушить свой бизнес. Вы и есть ваш бизнес. То как вы поведёте себя с людьми, предопределит большую часть вашего успеха в бизнесе. Хорошие манеры, вежливость и внимательность к потребностям ваших клиентов гарантируют вам то, что они вернутся снова. Клиенты должны чувствовать, что они важны для вас.
+
+Частью от имеющихся навыков людей является сдержанный юмор. Так же как и улыбка, этот важный фактор продлевает жизнь. Конечно, трудно улыбаться, когда дела идут плохо, но всё же, помните: никто не желает разговаривать с человеком, который настроен отрицательно. Периодическая улыбка поможет облегчить напряжённую ситуацию. Поддержание положительной перспективы на постоянном уровне сохранит ваш уровень мотивации. Не позволяйте депрессии, предчувствию, ненадёжности или сомнениям овладеть вашим разумом. </p>
+  <button id="close3">Закрыть</button>
+</dialog>
+<button id="show3"><img src="img/serch12.jpg" alt="" style="vertical-align:middle"></button>
+<br><br><center id="ts2">Навыки людей</center>
+	</td>
+</tr>
+
+
+<tr>
+<td>
+<dialog id="dialog4">
+<img src="img/serch2.jpg" alt="" style="vertical-align:middle"><br>
+
+  <p>Чтобы придать некую завершённость вашим предпринимательским навыкам, у вас должно быть нормальное знание маркетинга своего бизнеса. Маркетинг – это способность устанавливать связь с вашими потенциальными клиентами и информировать их относительно ваших изделий и услуг. Важно суметь определить и нацелиться на свой рынок. Вы должны знать о том, что принесёт выгоду вашему бизнесу. Читайте книги, обсуждайте и наблюдайте, как другие виды коммерческой деятельности успешно торгуют своей продукцией. Обычно эффективный маркетинг включает комбинирование многих методов, которые могут время от времени изменяться.</p>
+  <button id="close4">Закрыть</button>
+</dialog>
+<button id="show4"><img src="img/serch22.jpg" alt="" style="vertical-align:middle"></button>
+<br><br><center id="ts2">Навыки маркетинга</center>
+</td>
+<td>
+<dialog id="dialog5">
+<img src="img/setevik.jpg" alt="" style="vertical-align:middle"><br>
+
+  <p>Читайте книги, посещайте семинары, выставки, торговые показы и конференции, чтобы повысить ваши технические знания и оставаться на лидирующих позициях в своей области. Не делайте ошибок в работе своего бизнеса и не забывайте работать над ним. Никогда не прекращайте самообразование в вашей практической области и не забывайте: вы не должны отставать от изменяющихся технологий в пределах вашего выбранного поля деятельности.</p>
+  <button id="close5">Закрыть</button>
+</dialog>
+<button id="show5"><img src="img/setevik2.jpg" alt="" style="vertical-align:middle"></button>
+<br><br><center id="ts2">Технические навыки</center>
+</td>
+<td>
+<dialog id="dialog6">
+<img src="img/hand22.jpg" alt="" style="vertical-align:middle"><br>
+
+  <p>Вы должны быть материально хорошо осведомлены в деловом мире. Ваше предпринимательское знание должно включать в себя основы ведения бухгалтерского отчёта, организационные и административные навыки, понимание всех налоговых законов, федеральных и провинциальных требований и глубокого знания бизнеса, которым вы занимаетесь.
+
+Это может отпугнуть, т.к. необходимо познать много вещей. Но призадумайтесь. Вы способны изучить всё, что должны знать. Никто не был рождён подготовленным к бизнесу. Существует изобилие курсов, обучающих управлению бизнесом. Также существуют книги по самоусовершенствованию, которые могут помочь вам с финансовыми аспектами вашего бизнеса </p>
+  <button id="close6">Закрыть</button>
+</dialog>
+<button id="show6"><img src="img/hand12.jpg" alt="" style="vertical-align:middle"></button>
+<br><br><center id="ts2">Финансовые навыки</center>
+</td>
+</tr>
+
+</tbody>
+</table>
+    </div>
+    <br><br>
+  </div>
+
+  <div id="f">
+    <div class="container">
+      <div class="row centered">
+        <a href="#"><i class="fa fa-instagram"></i></a>
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-vk"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+
+</body>
+
+  <script>
+var dialog = document.querySelector('dialog');
+document.querySelector('#show').onclick = function() {
+  dialog.showModal();
+};
+document.querySelector('#close').onclick = function() {
+  dialog.close();};
+
+
+ var dialog2 = document.getElementById('dialog2');
+	document.getElementById('show2').onclick = function() {
+		dialog2.showModal();
+	};
+	document.getElementById('close2').onclick = function() {
+		dialog2.close();
+	};
+
+
+	var dialog3 = document.getElementById('dialog3');
+	document.getElementById('show3').onclick = function() {
+		dialog3.showModal();
+	};
+	document.getElementById('close3').onclick = function() {
+		dialog3.close();
+	};
+
+     var dialog4 = document.getElementById('dialog4');
+	document.getElementById('show4').onclick = function() {
+		dialog4.showModal();
+	};
+	document.getElementById('close4').onclick = function() {
+		dialog4.close();
+	};
+
+       var dialog5 = document.getElementById('dialog5');
+	document.getElementById('show5').onclick = function() {
+		dialog5.showModal();
+	};
+	document.getElementById('close5').onclick = function() {
+		dialog5.close();
+	};
+
+	 var dialog6 = document.getElementById('dialog6');
+	document.getElementById('show6').onclick = function() {
+		dialog6.showModal();
+	};
+	document.getElementById('close6').onclick = function() {
+		dialog6.close();
+	};
+
+	  var dialog7 = document.getElementById('dialog7');
+	document.getElementById('show7').onclick = function() {
+		dialog7.showModal();
+	};
+	document.getElementById('close7').onclick = function() {
+		dialog7.close();
+	};
+
+	 var dialog8 = document.getElementById('dialog8');
+	document.getElementById('show8').onclick = function() {
+		dialog8.showModal();
+	};
+	document.getElementById('close8').onclick = function() {
+		dialog8.close();
+	};
+
+	var dialog9 = document.getElementById('dialog9');
+	document.getElementById('show9').onclick = function() {
+		dialog9.showModal();
+	};
+	document.getElementById('close9').onclick = function() {
+		dialog9.close();
+	};
+</script>
+
+
+</html>

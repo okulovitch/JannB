@@ -38,7 +38,7 @@ a:hover,a:focus{
 hr{
   display: block;
   height: 1px;
-  border: 0px;
+  border: 5px;
   padding: 0;
   margin: 16px 0;
 }
@@ -48,6 +48,8 @@ hr{
   padding-top:15px;
   padding-bottom: 15px;
 }
+
+
 
 
 
@@ -66,6 +68,24 @@ hr{
 
 }
 
+#headerwrapAbutUs {
+  background: url(../img/contractBusiness.jpg) no-repeat center top;
+  margin-top:-10px;
+  padding-top: 10px;
+  text-align: center;
+  background-attachment: relative;
+  background-position: center;
+  min-height: 500px;
+  width: 100%;
+  background-size: 100%;
+
+-webkit-background-size:cover;
+
+}
+#AboutUsImg{
+  background: url(../img/Jann.jpg) no-repeat center top;
+
+}
 #serchrwrap{
   background: url(../img/hand1.jpg) no-repeat center top;
   margin-top:-2px;
@@ -116,16 +136,16 @@ text-align: center;
   font-size:30px;
 }
 
-#r{
-  background-color:#CD3333;
+#redBack {
+  background-color:#a64444;
   padding-top: 70px;
   padding-bottom:70px;
 }
-#r h4{
+#redBack h4{
   color:#fafafa;
 
 }
-#r p{
+#redBack  p{
   color: #fafafa;
 }
 
@@ -144,3 +164,24 @@ text-align: center;
 #f i:hover{
   color: #FF3030;
 }
+
+#DgAbUs{
+  background: #EEE9E9;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  text-align: center;
+}
+.intro{
+  float: none;
+    max-width: 880px;
+    margin: 2.5% auto 3.5%;
+    color:#fafafa;
+}
+#ground{
+  border-radius: 50px;
+}
+#{
+width: 200px;
+height: 200px;
+border-radius: 70px;
+ }
